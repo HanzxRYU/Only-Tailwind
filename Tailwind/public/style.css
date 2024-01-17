@@ -544,8 +544,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.ml-52 {
+  margin-left: 13rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .h-14 {
@@ -560,36 +568,52 @@ video {
   height: 1000px;
 }
 
-.h-\[100px\] {
-  height: 100px;
+.h-\[500\] {
+  height: 500;
 }
 
-.h-\[440px\] {
-  height: 440px;
+.h-\[500px\] {
+  height: 500px;
 }
 
-.h-\[px\] {
-  height: px;
+.h-\[900px\] {
+  height: 900px;
+}
+
+.w-\[1200px\] {
+  width: 1200px;
+}
+
+.w-\[500\] {
+  width: 500;
 }
 
 .w-\[500px\] {
   width: 500px;
 }
 
-.w-\[300px\] {
-  width: 300px;
+.w-\[900px\] {
+  width: 900px;
 }
 
-.w-\[400px\] {
-  width: 400px;
+.min-w-1 {
+  min-width: 0.25rem;
 }
 
-.w-\[1000px\] {
-  width: 1000px;
+.min-w-5 {
+  min-width: 1.25rem;
 }
 
-.w-\[10000px\] {
-  width: 10000px;
+.max-w-10 {
+  max-width: 2.5rem;
+}
+
+.max-w-5 {
+  max-width: 1.25rem;
+}
+
+.max-w-52 {
+  max-width: 13rem;
 }
 
 .overflow-y-scroll {
@@ -601,12 +625,30 @@ video {
   word-break: normal;
 }
 
+.bg-violet-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 33 182 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .bg-kucing {
   background-image: url("../public/kucing.jpeg");
+}
+
+.bg-mobil {
+  background-image: url("../public/koenigsegg jesko.jpg");
+}
+
+.bg-rizz {
+  background-image: url("../public/Rizzz me.jpg");
 }
 
 .from-cyan-500 {
@@ -696,6 +738,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-agak-kecil {
+  font-size: 22px;
 }
 
 .font-semibold {
