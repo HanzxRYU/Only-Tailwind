@@ -5,15 +5,16 @@ module.exports = {
     extend: {
       fontFamily: {
         lemon: "lemon",
+        oswald: "oswald",
       },
       fontSize: {
         "mega-besar": "200px",
-        "agak-kecil": "22px"
+        "agak-kecil": "22px",
       },
       backgroundImage: {
         kucing: 'url("../public/kucing.jpeg")',
         mobil: 'url("../public/koenigsegg jesko.jpg")',
-        rizz:  'url("../public/Rizzz me.jpg")'
+        rizz: 'url("../public/Rizzz me.jpg")',
       },
     },
     plugins: [],
