@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.m-px {
+  margin: 1px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
