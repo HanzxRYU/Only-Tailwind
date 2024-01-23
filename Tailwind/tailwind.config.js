@@ -16,6 +16,7 @@ module.exports = {
         mobil: 'url("../public/koenigsegg jesko.jpg")',
         rizz: 'url("../public/Rizzz me.jpg")',
       },
+      
     },
     plugins: [],
   },
