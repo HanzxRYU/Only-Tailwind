@@ -657,6 +657,14 @@ video {
   height: 96px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[1500px\] {
+  height: 1500px;
+}
+
 .w-\[100px\] {
   width: 100px;
 }
@@ -709,6 +717,10 @@ video {
   width: 96px;
 }
 
+.w-\[\] {
+  width: ;
+}
+
 .min-w-5 {
   min-width: 1.25rem;
 }
@@ -719,10 +731,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -755,24 +763,6 @@ video {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.divide-y-\[\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc( * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc( * var(--tw-divide-y-reverse));
-}
-
-.divide-y-\[100px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(100px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(100px * var(--tw-divide-y-reverse));
-}
-
-.divide-x > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-x-reverse: 0;
-  border-right-width: calc(1px * var(--tw-divide-x-reverse));
-  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-}
-
 .divide-yellow-600 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(202 138 4 / var(--tw-divide-opacity));
@@ -784,6 +774,10 @@ video {
 
 .text-wrap {
   text-wrap: wrap;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .text-pretty {
@@ -811,22 +805,22 @@ video {
   border-width: 4px;
 }
 
-.border-t-4 {
-  border-top-width: 4px;
+.border-\[3px\] {
+  border-width: 3px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
+.border-t-\[3px\] {
+  border-top-width: 3px;
+}
+
+.border-green-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
 .border-sky-500 {
   --tw-border-opacity: 1;
   border-color: rgb(14 165 233 / var(--tw-border-opacity));
-}
-
-.border-indigo-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
 .bg-amber-300 {
