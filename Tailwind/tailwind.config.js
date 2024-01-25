@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         lemon: "lemon",
         oswald: "oswald",
+        rubik_mono: "rubik-mono",
       },
       fontSize: {
         "mega-besar": "200px",
@@ -16,7 +17,6 @@ module.exports = {
         mobil: 'url("../public/koenigsegg jesko.jpg")',
         rizz: 'url("../public/Rizzz me.jpg")',
       },
-      
     },
     plugins: [],
   },
