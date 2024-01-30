@@ -16,6 +16,7 @@ module.exports = {
         kucing: 'url("../public/kucing.jpeg")',
         mobil: 'url("../public/koenigsegg jesko.jpg")',
         rizz: 'url("../public/Rizzz me.jpg")',
+        ust: 'url("../public/ust.khalid basalamah.jpg")',
       },
     },
     plugins: [],
