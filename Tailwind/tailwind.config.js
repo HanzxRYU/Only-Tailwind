@@ -17,6 +17,7 @@ module.exports = {
         mobil: 'url("../public/koenigsegg jesko.jpg")',
         rizz: 'url("../public/Rizzz me.jpg")',
         ust: 'url("../public/ust.khalid basalamah.jpg")',
+        shop: 'url("../public/man-shopping-goggles-shop.jpg")',
       },
     },
     plugins: [],
