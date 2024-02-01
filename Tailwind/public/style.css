@@ -681,6 +681,10 @@ video {
   margin-top: 1px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -809,6 +813,18 @@ video {
   height: ;
 }
 
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[40pxpx\] {
+  height: 40pxpx;
+}
+
+.h-\[46px\] {
+  height: 46px;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -919,6 +935,10 @@ video {
 
 .w-\[\] {
   width: ;
+}
+
+.w-\[240px\] {
+  width: 240px;
 }
 
 .min-w-5 {
@@ -1470,6 +1490,14 @@ video {
 
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-rubik_mono {
+  font-family: rubik-mono;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-2xl {
