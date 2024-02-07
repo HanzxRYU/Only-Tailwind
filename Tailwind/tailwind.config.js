@@ -7,7 +7,7 @@ module.exports = {
         lemon: "lemon",
         oswald: "oswald",
         rubik_mono: "rubik-mono",
-        roboto:"roboto",
+        roboto: "roboto",
       },
       fontSize: {
         "mega-besar": "200px",
