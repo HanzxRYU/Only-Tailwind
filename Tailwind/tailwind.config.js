@@ -2,6 +2,7 @@
 module.exports = {
   darkMode: "class",
   content: ["./public/**/*.{html,js}"],
+
   theme: {
     extend: {
       fontFamily: {
@@ -20,6 +21,8 @@ module.exports = {
         rizz: 'url("../public/Rizzz me.jpg")',
         ust: 'url("../public/ust.khalid basalamah.jpg")',
         shop: 'url("../public/man-shopping-goggles-shop.jpg")',
+        pantai: 'url("../public/pantai.jpeg")',
+        museum: 'url("../public/museum.jpg")',
       },
     },
     plugins: [],

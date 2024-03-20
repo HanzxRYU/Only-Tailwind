@@ -627,6 +627,10 @@ video {
   margin: 0.5rem;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -772,6 +776,14 @@ video {
 
 .mt-\[6px\] {
   margin-top: 6px;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mt-40 {
+  margin-top: 10rem;
 }
 
 .block {
@@ -1130,6 +1142,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-14 > :not([hidden]) ~ :not([hidden]) {
@@ -2269,6 +2285,11 @@ video {
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .hover\:text-blue-800:hover {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
@@ -2446,6 +2467,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:h-48 {
+    height: 12rem;
+  }
+
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -2621,6 +2646,18 @@ video {
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:h-60 {
+    height: 15rem;
+  }
+
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:grid-cols-3 {
