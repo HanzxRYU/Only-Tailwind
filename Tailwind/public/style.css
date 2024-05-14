@@ -615,6 +615,14 @@ video {
   left: 0px;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
+.col-end-5 {
+  grid-column-end: 5;
+}
+
 .float-left {
   float: left;
 }
@@ -934,6 +942,10 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -1110,6 +1122,10 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .flex-col {
