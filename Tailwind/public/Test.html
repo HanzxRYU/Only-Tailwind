@@ -3,18 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator Sederhana</title>
+   <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div
-      class="grid grid-cols-4 *:mb-5 *:ml-5 *:mt-5 *:h-20 *:w-20 *:bg-blue-500 max-md:grid-cols-3 max-md:*:bg-yellow-500 max-sm:grid-cols-2 max-sm:*:bg-red-500 lg:grid-cols-5"
-    >
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  </div>
+  <body class="flex items-center justify-center h-screen bg-gray-200">
+    <div class="bg-white p-8 rounded shadow-md">
+      <h2 class="text-2xl mb-4">Kalkulator Sederhana</h2>
+      <input
+        type="number"
+        id="num1"
+        class="border p-2 rounded w-full mb-2"
+        placeholder="Masukkan angka pertama"
+      />
+      <input
+        type="number"
+        id="num2"
+        class="border p-2 rounded w-full mb-2"
+        placeholder="Masukkan angka kedua"
+      />
+      <select id="operation" class="border p-2 rounded w-full mb-2">
+        <option value="add">Tambah</option>
+        <option value="subtract">Kurang</option>
+        <option value="multiply">Kali</option>
+        <option value="divide">Bagi</option>
+      </select>
+      <button id="calculate" class="bg-blue-500 text-white p-2 rounded w-full">
+        Hitung
+      </button>
+      <h2 id="result" class="text-xl mt-4"></h2>
+    </div>
+
+    <script>
+      document
+        .getElementById("calculate")
+        .addEventListener("click", function () {
+          var num1 = document.getElementById("num1").value;
+          var num2 = document.getElementById("num2").value;
+          var operation = document.getElementById("operation").value;
+          var result;
+
+          switch (operation) {
+            case "add":
+              result = Number(num1) + Number(num2);
+              break;
+            case "subtract":
+              result = Number(num1) - Number(num2);
+              break;
+            case "multiply":
+              result = Number(num1) * Number(num2);
+              break;
+            case "divide":
+              result = Number(num1) / Number(num2);
+              break;
+          }
+
+          document.getElementById("result").innerText = "Hasil: " + result;
+        });
+    </script>
   </body>
 </html>
