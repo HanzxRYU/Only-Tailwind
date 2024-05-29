@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Check-Out</title>
   </head>
   <body class="bg-stone-400">
     <div
@@ -22,7 +22,7 @@
 
         <img
           src="You Are My Sunshine Lebron Wall And Art Print.jpeg"
-          class="w-50 h-40 mt-4 ml-10 bg-contain"
+          class="w-50 h-40 mt-4 ml-10 bg-contain rounded-md"
         />
         <div class="ml-3">
           <p class="font-medium text-slate-800 text-xl mt-4 ml-2">
@@ -34,9 +34,9 @@
           >
             <p class="-mt-[3px]">100% Berkompoten</p>
           </div>
-          <img src="Diskon.jpeg" class="w-[70px] h-[50px] mt-2 ml-2" />
+          <img src="Diskon.jpeg" class="w-[70px] h-[40px] mt-2 ml-2" />
         </div>
-        <div class="mt-20">
+        <div class="mt-20 text-gray-600">
           <label for="Bakat">Pilih Bakat:</label>
           <select name="Bakat" id="Bakat" class="text-center text-gray-600">
             <option value="Memasak">Memasak</option>
@@ -48,8 +48,9 @@
         <div class="mt-20 ml-6">
           <h1 class="font-medium">Rp12.000.000,00</h1>
         </div>
-        <div class="border-2 border-black h-7 mt-20 ml-6">
-          <button>
+        <div class="flex">
+          <button class="border-2 h-7 ml-6 mt-20"
+          onclick="kurang()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -59,7 +60,12 @@
             >
               <path fill="currentColor" d="M19 12.998H5v-2h14z" />
             </svg></button
-          ><input type="number" class="w-16 text-center" /><button>
+          ><input
+            type="number"
+            class="w-12 text-center border-y-2 h-7 mt-20"
+            value="1"
+            id="nominal"
+          /><button class="border-2 h-7 mt-20" onclick="tambah()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -77,14 +83,50 @@
         <div class="mt-20 ml-7 text-orange-600 font-medium">
           <h1>Rp12.000.000,00</h1>
         </div>
-        <div class="mt-20 ml-4 text-center"> <label for="reset">Hapus</label>
-            <br>
-            <select name="Bakat" id="Bakat" class="text-orange-600 text-center">
-              <option value="Memasak">Produk Serupa</option>
-              <option value="Bertani">Bertani</option>
-              <option value="Bermain-Basket">Bermain Basket</option>
-              <option value="ALL-ROLE">ALL-ROLE</option></div>
+        <div class="mt-20 ml-4 text-center">
+          <label for="reset" class="text-gray-600">Hapus</label>
+          <br />
+          <select name="Bakat" id="Bakat" class="text-orange-600 text-center">
+            <option value="Memasak">Produk Serupa</option>
+            <option value="Bertani">Bertani</option>
+            <option value="Bermain-Basket">Bermain Basket</option>
+            <option value="ALL-ROLE">ALL-ROLE</option>
+          </select>
+        </div>
       </div>
     </div>
+    <div class="bg-white w-[1380px] h-[120px] mx-auto border border-slate-600">
+      <p class="ml-[26px] mt-2 text-black font-normal">Gunakan Voucher</p>
+      <div class="flex">
+        <form>
+          <input
+            type="checkbox"
+            name="barang"
+            id="pesanan"
+            class="w-6 h-6 mt-[18px] ml-7"
+          />
+        </form>
+        <img src="ongkir.jpeg" class="w-[86px] h-[38px] mt-2.5 ml-5" />
+        <p class="mt-4 ml-4 text-black font-normal">
+          Gratis ongkir s/d Rp15.000 dengan min. Belanja Rp;0 Gratis ongkir s/d
+          Rp20.000.000 dengan min. Belanja Rp50.000.000
+          <span class="text-blue-600">Pelajari lebih lanjut.</span>
+        </p>
+      </div>
+    </div>
+    <script>
+      function tambah() {
+        var input2 = document.getElementById("nominal").value;
+        input2++;
+        document.getElementById("nominal").value = input2;
+        console.log(input2);
+      }
+      function kurang() {
+        var input1 = document.getElementById("nominal").value;
+        input1--;
+        document.getElementById('nominal').value = input1;
+        console.log(input1);
+      }
+    </script>
   </body>
 </html>
