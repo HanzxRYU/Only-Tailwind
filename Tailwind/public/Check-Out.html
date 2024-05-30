@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Check-Out</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-stone-400">
+    <!-- Konten website Anda -->
     <div
       class="bg-white w-[1380px] h-[200px] mt-6 mx-auto border border-slate-400"
     >
@@ -46,11 +48,10 @@
           </select>
         </div>
         <div class="mt-20 ml-6">
-          <h1 class="font-medium">Rp12.000.000,00</h1>
+          <h1 class="font-medium" id="HargaBudak">12000000</h1>
         </div>
         <div class="flex">
-          <button class="border-2 h-7 ml-6 mt-20"
-          onclick="kurang()">
+          <button class="border-2 h-7 ml-6 mt-20" onclick="kurang()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -80,8 +81,8 @@
             </svg>
           </button>
         </div>
-        <div class="mt-20 ml-7 text-orange-600 font-medium">
-          <h1>Rp12.000.000,00</h1>
+        <div class="mt-20 ml-7 text-orange-600 font-medium" id="TotalHarga">
+          <h1></h1>
         </div>
         <div class="mt-20 ml-4 text-center">
           <label for="reset" class="text-gray-600">Hapus</label>
@@ -96,7 +97,7 @@
       </div>
     </div>
     <div class="bg-white w-[1380px] h-[120px] mx-auto border border-slate-600">
-      <p class="ml-[26px] mt-2 text-black font-normal">Gunakan Voucher</p>
+      <p class="ml-[26px] mt-2 text-black font-normal">Voucher Gratis Ongkir</p>
       <div class="flex">
         <form>
           <input
@@ -110,22 +111,97 @@
         <p class="mt-4 ml-4 text-black font-normal">
           Gratis ongkir s/d Rp15.000 dengan min. Belanja Rp;0 Gratis ongkir s/d
           Rp20.000.000 dengan min. Belanja Rp50.000.000
-          <span class="text-blue-600">Pelajari lebih lanjut.</span>
+          <button class="text-blue-600">Pelajari lebih lanjut.</button>
         </p>
       </div>
     </div>
+    <div class="bg-white w-[1380px] h-[120px] mx-auto border border-slate-600">
+      <p class="ml-[26px] mt-2 text-black font-normal">Masukan Kode Voucher</p>
+      <div class="flex">
+        <img src="Voucher.jpeg" class="w-[100px] ml-[26px] mt-2" />
+        <input
+          type="text"
+          name="task"
+          id="inputVoucher"
+          class="h-[40px] w-[200px] mt-[9px] rounded-md border-black shadow-sm focus:border-slate-700 ml-6 border-2 text-center"
+          placeholder=" Masukan Voucher..."
+        />
+        <button
+          onclick="ResultVoucher()"
+          id="CheckVoucher"
+          class="bg-blue-600 w-[120px] h-[50px] mt-[3px] ml-4 rounded-lg hover:bg-blue-800"
+        >
+          <p class="text-white font-medium text-center">CHECK</p>
+        </button>
+        <h1 id="hasilvoucher" class="mt-[14px] ml-6"></h1>
+      </div>
+      
+    </div>
+    <footer
+      class="fixed inset-x-0 bottom-0 bg-white w-[1500px] h-[180px] rounded-lg mb-5 mx-auto"
+    >
+      <button
+        class="bg-blue-600 w-[180px] h-[50px] mt-[120px] ml-[1300px] rounded-lg hover:bg-blue-800"
+      >
+        <p class="text-white font-medium text-center">PESAN SEKARANG.</p>
+      </button>
+    </footer>
+
     <script>
+      var budak = document.getElementById("HargaBudak").innerHTML;
+      document.getElementById("TotalHarga").innerHTML = +budak;
+      console.log(budak);
+
       function tambah() {
         var input2 = document.getElementById("nominal").value;
         input2++;
         document.getElementById("nominal").value = input2;
         console.log(input2);
+        document.getElementById("nominal").value = input2;
+        var hasil = input2 * budak;
+        console.log(hasil);
+        document.getElementById("TotalHarga").innerHTML = hasil;
       }
       function kurang() {
         var input1 = document.getElementById("nominal").value;
         input1--;
-        document.getElementById('nominal').value = input1;
+        document.getElementById("nominal").value = input1;
         console.log(input1);
+        document.getElementById("nominal").value = input1;
+        var hasil = input1 * budak;
+        document.getElementById("TotalHarga").innerHTML = hasil;
+      }
+      function ResultVoucher() {
+        var inputVoucher = document.getElementById("inputVoucher").value;
+        if (inputVoucher == "Discount 50%") {
+          console.log(inputVoucher);
+
+          document.getElementById("hasilvoucher").innerHTML =
+            "Voucher Berhasil";
+          document
+            .getElementById("hasilvoucher")
+            .classList.remove("text-red-500", "font-bold");
+          document
+            .getElementById("hasilvoucher")
+            .classList.add("text-green-500", "font-bold");
+        } else if (inputVoucher == "Discount 20%") {
+          document.getElementById("hasilvoucher").innerHTML =
+            "Vocher Berhasil!";
+          document
+            .getElementById("hasilvoucher")
+            .classList.remove("text-red-500", "font-bold");
+          document
+            .getElementById("hasilvoucher")
+            .classList.add("text-green-500", "font-bold");
+        } else {
+          document.getElementById("hasilvoucher").innerHTML = "Coba Lagi";
+          document
+            .getElementById("hasilvoucher")
+            .classList.remove("text-green-500", "font-bold");
+          document
+            .getElementById("hasilvoucher")
+            .classList.add("text-red-500", "font-bold");
+        }
       }
     </script>
   </body>
